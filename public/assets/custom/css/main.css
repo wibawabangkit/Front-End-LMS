@@ -1,0 +1,204 @@
+.gfd-title {
+    margin-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.gfd-title h2 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.005em;
+    text-transform: capitalize;
+    color: #7A7A7A;
+}
+
+.gfd-jadwal .alert {
+    border-radius: 8px!important;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 16px;
+}
+
+.gfd-semuajadwal .gfd-board-jadwal {
+    background: #FFFFFF;
+    border: 1px solid #F5F6F8;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 8px 24px rgba(4, 5, 19, 0.05);
+    box-shadow: 0px 8px 24px rgba(4, 5, 19, 0.05);
+    border-radius: 8px!important;
+    padding: 16px;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.gfd-semuajadwal .gfd-board-jadwal .figure-jadwal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.gfd-semuajadwal .gfd-board-jadwal .figure-jadwal .rabu {
+    background-image: url("../img/hari.png"), -webkit-gradient(linear, left top, right top, from(#F77062), to(#FE5196));
+    background-image: url("../img/hari.png"), (90deg, #F77062 0%, #FE5196 100%);
+    background-size: cover;
+    border-radius: 6px!important;
+    max-height: 106px;
+    max-width: 98px;
+    min-height: 106px;
+    min-width: 98px;
+    height: 106px;
+    width: 98px;
+    margin-right: 24px;
+    padding: 42px 2px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.005em;
+    text-transform: uppercase;
+    color: #FEFEFE;
+    text-align: center;
+}
+
+.gfd-semuajadwal .gfd-board-jadwal .figure-matkul {
+    width: 100%;
+}
+
+.gfd-semuajadwal .gfd-board-jadwal .figure-matkul .waktu-matkul {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.005em;
+    text-transform: capitalize;
+    color: #222222;
+    margin-bottom: 8px;
+}
+
+.gfd-semuajadwal .gfd-board-jadwal .figure-matkul .title-matkul {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0.005em;
+    text-transform: capitalize;
+    color: #222222;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.gfd-semuajadwal .gfd-board-jadwal .action-jadwal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.gfd-semuajadwal .gfd-board-jadwal .action-jadwal .jenis .jenis-matkul {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.005em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.gfd-semuajadwal .gfd-board-jadwal .action-jadwal .jenis .nonaktif {
+    color: #7A7A7A;
+}
+
+.gfd-semuajadwal .gfd-board-jadwal .action-jadwal .aksi {
+    text-align: center;
+    padding-top: 18px;
+}
+
+.gfd-semuajadwal .gfd-board-jadwal .action-jadwal .aksi a.materi-kuliah {
+    background: #00ACC1;
+    -webkit-box-shadow: 0px 8px 16px rgba(67, 97, 154, 0.09);
+    box-shadow: 0px 8px 16px rgba(67, 97, 154, 0.09);
+    border-radius: 6px!important;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.005em;
+    text-transform: capitalize;
+    padding: 12px 18px;
+}
+
+.gfd-aside {
+    padding-top: 24px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.gfd-aside-panel {
+    background: #FFFFFF;
+    border: 1px solid #F5F6F8;
+    -webkit-box-shadow: 0px 8px 16px rgba(67, 97, 154, 0.09);
+    box-shadow: 0px 8px 16px rgba(67, 97, 154, 0.09);
+    border-radius: 8px!important;
+    padding: 14px 16px;
+    margin-bottom: 24px;
+}
+
+.no-side {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.gfd-aside-panel #custom-cells-events {
+    width: 100%;
+    border-top: 1px solid #F5F6F8;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 14px;
+}
+
+.gfd-aside-panel #custom-cells-events p {
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: 0.005em;
+    text-transform: capitalize;
+}
+
+.gfd-aside-panel #custom-cells-events p:before {
+    display: inline-block;
+    content: ' ';
+    background-color: #00ACC1;
+    border-radius: 50px!important;
+    width: 8px;
+    height: 8px;
+    margin-right: 8px;
+}
+
+.gfd-aside-panel .gfd-aside-greeting {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #00ACC1;
+    margin-top: 0;
+}
+
+.gfd-aside-panel .gfd-aside-message {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: #222222;
+    margin-bottom: 26px;
+}
