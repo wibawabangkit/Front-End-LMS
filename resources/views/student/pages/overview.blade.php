@@ -11,142 +11,138 @@
     <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
         <div class="d-flex flex-column-fluid">
             <div class="container">
-
                 <div class="row">
                     <div class="col-md-9">
                         <section class="gfd-jadwal">
-                            <div class="gfd-title">
-                                <div>
-                                <h2>Informasi Hari Ini</h2>
-                                </div>
-                                <div>
-                                    <h2 class="pull-right" style="text-align: right;">Semester Genap 2020/2021</h2>
-                                </div>
-                            </div>
-                            <div class="alert alert-custom alert-light-danger" role="alert">
-                                <div class="alert-icon"><i class="flaticon2-bell-5 icon-md"></i></div>
-                                Pengambilan raport akan dilakukan pada hari Rabu, 31 Maret 2021
-                            </div>
+                                    <div class="gfd-title">
+                                        <div>
+                                        <h2>Informasi Hari Ini</h2>
+                                        </div>
+                                        <div>
+                                            <h2 class="pull-right" style="text-align: right;">Semester Genap 2020/2021</h2>
+                                        </div>
+                                    </div>
+                                    <div class="alert alert-custom alert-light-danger" role="alert">
+                                        <div class="alert-icon"><i class="flaticon2-bell-5 icon-md"></i></div>
+                                        Pengambilan raport akan dilakukan pada hari Rabu, 31 Maret 2021
+                                    </div>
                         </section>
                         <section class="gfd-semuajadwal">
-                            <div class="gfd-title">
-                                <div>
-                                    <h2>Jadwal Pelajaran Anda</h2>
-                                </div>
-                                <div>
-                                    <h2 class="pull-right" style="text-align: right;">Periode {{ date('d') }} - 01 Apr 2021</h2>
-                                </div>
-                            </div>
-                            <div class="gfd-board-jadwal">
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <div class="figure-jadwal">
-                                            <div class="rabu">{{ date('l') }}</div>
-                                            <div class="figure-matkul">
-                                                <p class="waktu-matkul">10:00 - 12:00 WIB</p>
-                                                <h1 class="title-matkul">Sosiologi</h1>
-                                            </div>
+                                    <div class="gfd-title">
+                                        <div>
+                                            <h2>Jadwal Pelajaran Anda</h2>
+                                        </div>
+                                        <div>
+                                            <h2 class="pull-right" style="text-align: right;">Periode {{ date('d') }} - 01 Apr 2021</h2>
                                         </div>
                                     </div>
-                                    <div class="col-md-7">
-                                        <div class="action-jadwal">
-                                            <div class="jenis">
+                                    <div class="gfd-board-jadwal">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <div class="figure-jadwal">
+                                                    <div class="rabu">{{ date('l') }}</div>
+                                                    <div class="figure-matkul">
+                                                        <p class="waktu-matkul">10:00 - 12:00 WIB</p>
+                                                        <h1 class="title-matkul">Sosiologi</h1>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div class="action-jadwal">
+                                                    <div class="jenis">
 
-                                            </div>
-                                            <div class="aksi">
-                                                <a href="#" class="btn btn-success" data-toggle="modal" data-target="#modalMateri">Lihat Nilai</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="gfd-board-jadwal">
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <div class="figure-jadwal">
-                                            <div class="rabu">{{ date('l') }}</div>
-                                            <div class="figure-matkul">
-                                                <p class="waktu-matkul">09:00 - 12:00 WIB</p>
-                                                <h1 class="title-matkul">Match</h1>
+                                                    </div>
+                                                    <div class="aksi">
+                                                        <a href="#" class="btn btn-success" data-toggle="modal" data-target="#modalMateri">Lihat Nilai</a>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-7">
-                                        <div class="action-jadwal">
-                                            <div class="jenis">
+                                    <div class="gfd-board-jadwal">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <div class="figure-jadwal">
+                                                    <div class="rabu">{{ date('l') }}</div>
+                                                    <div class="figure-matkul">
+                                                        <p class="waktu-matkul">09:00 - 12:00 WIB</p>
+                                                        <h1 class="title-matkul">Match</h1>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div class="action-jadwal">
+                                                    <div class="jenis">
 
-                                            </div>
-                                            <div class="aksi">
-                                                <a href="#" class="btn btn-success" data-toggle="modal" data-target="#modalMateri">Lihat Nilai</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="gfd-board-jadwal">
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <div class="figure-jadwal">
-                                            <div class="rabu">{{ date('l') }}</div>
-                                            <div class="figure-matkul">
-                                                <p class="waktu-matkul">10:00 - 12:00 WIB</p>
-                                                <h1 class="title-matkul">Biologi</h1>
+                                                    </div>
+                                                    <div class="aksi">
+                                                        <a href="#" class="btn btn-success" data-toggle="modal" data-target="#modalMateri">Lihat Nilai</a>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-7">
-                                        <div class="action-jadwal">
-                                            <div class="jenis">
+                                    <div class="gfd-board-jadwal">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <div class="figure-jadwal">
+                                                    <div class="rabu">{{ date('l') }}</div>
+                                                    <div class="figure-matkul">
+                                                        <p class="waktu-matkul">10:00 - 12:00 WIB</p>
+                                                        <h1 class="title-matkul">Biologi</h1>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div class="action-jadwal">
+                                                    <div class="jenis">
 
-                                            </div>
-                                            <div class="aksi">
-                                                <a href="#" class="btn btn-success" data-toggle="modal" data-target="#modalMateri">Lihat Nilai</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="gfd-board-jadwal">
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <div class="figure-jadwal">
-                                            <div class="rabu">{{ date('l') }}</div>
-                                            <div class="figure-matkul">
-                                                <p class="waktu-matkul">10:00 - 12:00 WIB</p>
-                                                <h1 class="title-matkul">English</h1>
+                                                    </div>
+                                                    <div class="aksi">
+                                                        <a href="#" class="btn btn-success" data-toggle="modal" data-target="#modalMateri">Lihat Nilai</a>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-7">
-                                        <div class="action-jadwal">
-                                            <div class="jenis">
+                                    <div class="gfd-board-jadwal">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <div class="figure-jadwal">
+                                                    <div class="rabu">{{ date('l') }}</div>
+                                                    <div class="figure-matkul">
+                                                        <p class="waktu-matkul">10:00 - 12:00 WIB</p>
+                                                        <h1 class="title-matkul">English</h1>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div class="action-jadwal">
+                                                    <div class="jenis">
 
-                                            </div>
-                                            <div class="aksi">
-                                                <a href="#" class="btn btn-success" data-toggle="modal" data-target="#modalMateri">Lihat Nilai</a>
+                                                    </div>
+                                                    <div class="aksi">
+                                                        <a href="#" class="btn btn-success" data-toggle="modal" data-target="#modalMateri">Lihat Nilai</a>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
 
                         </section>
                     </div>
                     <div class="col-md-3 gfd-aside">
                         <div class="gfd-aside-panel ribbon ribbon-top ribbon-ver">
-                            <div class="ribbon-target bg-danger btn btn-icon btn-light-white pulse pulse-danger" style="top: -2px; left: 20px;">
-                                <i class="flaticon2-information"></i>
-                                <span class="pulse-ring"></span>
-                            </div>
-
-                            <br><br>
-                        <div class="gfd-aside-panel">
-                            <h4 class="gfd-aside-greeting">Hi, WIBAWA BANGKIT</h4>
-                            <p class="gfd-aside-message">there are tasks that you still haven't finished. </p>
-                            <hr>
-                            <a href="#">Read More →</a>
+                                <div class="ribbon-target bg-danger btn btn-icon btn-light-white pulse pulse-danger" style="top: -2px; left: 20px;">
+                                        <i class="flaticon2-information"></i>
+                                        <span class="pulse-ring"></span>
+                                </div>
+                                <br><br>
+                                <p class="gfd-aside-message">there are tasks that you still haven't finished. </p>
+                                <hr>
+                                <a href="#">Read More →</a>
                         </div>
-                            <div class="datepicker-here" data-language='id'></div>
+                        <div class="datepicker-here" data-language='id'></div>
                     </div>
                 </div>
             </div>
@@ -224,7 +220,7 @@
     <script src="{{ asset('assets/js/pages/features/charts/apexcharts.js') }}"></script>
     <script src="https://unpkg.com/gauge-chart@latest/dist/bundle.js"></script>
     <script src="{{ asset('assets/custom/js/datepicker.id.js') }}"></script>
-    <script>
+    <script type="text/javascript">
         function chartNilai(avg) {
             if (isNaN(avg)) avg = 0;
 

@@ -48,103 +48,83 @@
                         </div>
 
                         <div class="col-xl-4">
-                            <div class="card card-custom gutter-b">
-                                <div class="card-header border-0 py-5">
-                                    <h3 class="card-title align-items-start flex-column">
-                                        <span class="card-label font-weight-bolder text-dark">Teacher Login Activities</span>
-                                    </h3>
+                            <div class="card card-custom card-stretch gutter-b">
+                                <div class="card-header border-0">
+                                    <h3 class="card-title font-weight-bolder text-dark">Teacher Login Activities</h3>
                                 </div>
-                                <div class="card-body pt-0 pb-3">
-                                    <div class="tab-content">
-                                        <div class="table-responsive" style="height: 370px !important; overflow: scroll;">
-                                            <table class="table table-head-custom table-head-bg table-borderless table-vertical-center">
-                                                <thead>
-                                                <tr class="text-left text-uppercase">
-                                                    <th style="min-width: 200px" class="pl-7">
-                                                        <span class="text-dark-75">Name</span>
-                                                    </th>
-                                                    <th style="min-width: 120px">Status</th>
-                                                </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="pl-0 py-8">
-                                                            <div class="d-flex align-items-center">
-                                                                <div class="symbol symbol-50 symbol-light mr-4">
-                                                                    <span class="symbol-label">
-                                                                        <img src="{{ asset('assets/media/svg/avatars/001-boy.svg') }}" class="h-75 align-self-end" alt="" />
-                                                                    </span>
-                                                                </div>
-                                                                <div>
-                                                                    <a href="#" class="text-dark-75 font-weight-bolder text-hover-primary mb-1 font-size-lg">Mrs. Siska</a>
-                                                                    <span class="text-muted font-weight-bold d-block">Homeroom Teacher</span>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <span class="text-dark-75 font-weight-bolder d-block font-size-lg">Teach</span>
-                                                            <span class="font-weight-bold text-success">Online</span>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="pl-0 py-8">
-                                                            <div class="d-flex align-items-center">
-                                                                <div class="symbol symbol-50 symbol-light mr-4">
-                                                                    <span class="symbol-label">
-                                                                        <img src="{{ asset('assets/media/svg/avatars/001-boy.svg') }}" class="h-75 align-self-end" alt="" />
-                                                                    </span>
-                                                                </div>
-                                                                <div>
-                                                                    <a href="#" class="text-dark-75 font-weight-bolder text-hover-primary mb-1 font-size-lg">Mrs. Siska</a>
-                                                                    <span class="text-muted font-weight-bold d-block">Homeroom Teacher</span>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <span class="text-dark-75 font-weight-bolder d-block font-size-lg">Teach</span>
-                                                            <span class="font-weight-bold text-success">Online</span>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="pl-0 py-8">
-                                                            <div class="d-flex align-items-center">
-                                                                <div class="symbol symbol-50 symbol-light mr-4">
-                                                                    <span class="symbol-label">
-                                                                        <img src="{{ asset('assets/media/svg/avatars/001-boy.svg') }}" class="h-75 align-self-end" alt="" />
-                                                                    </span>
-                                                                </div>
-                                                                <div>
-                                                                    <a href="#" class="text-dark-75 font-weight-bolder text-hover-primary mb-1 font-size-lg">Mrs. Siska</a>
-                                                                    <span class="text-muted font-weight-bold d-block">Homeroom Teacher</span>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <span class="text-dark-75 font-weight-bolder d-block font-size-lg">Teach</span>
-                                                            <span class="font-weight-bold text-danger">Offline</span>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="pl-0 py-8">
-                                                            <div class="d-flex align-items-center">
-                                                                <div class="symbol symbol-50 symbol-light mr-4">
-                                                                    <span class="symbol-label">
-                                                                        <img src="{{ asset('assets/media/svg/avatars/001-boy.svg') }}" class="h-75 align-self-end" alt="" />
-                                                                    </span>
-                                                                </div>
-                                                                <div>
-                                                                    <a href="#" class="text-dark-75 font-weight-bolder text-hover-primary mb-1 font-size-lg">Mrs. Siska</a>
-                                                                    <span class="text-muted font-weight-bold d-block">Homeroom Teacher</span>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <span class="text-dark-75 font-weight-bolder d-block font-size-lg">Teach</span>
-                                                            <span class="font-weight-bold text-danger">Offline</span>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                <div class="card-body pt-0">
+                                    <div data-scroll="true" data-height="350">
+                                        <div class="d-flex align-items-center flex-wrap mb-8">
+                                            <div class="symbol symbol-50 symbol-light mr-5">
+                                                <span class="symbol-label">
+                                                    <img src="{{ asset('assets/media/svg/avatars/001-boy.svg') }}" class="h-50 align-self-center" alt="" />
+                                                </span>
+                                            </div>
+                                            <div class="d-flex flex-column flex-grow-1 mr-2">
+                                                <a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">Karim Bale</a>
+                                                <span class="text-muted font-weight-bold">Math Teacher</span>
+                                            </div>
+                                            <span class="label label-xl label-danger label-inline my-lg-0 my-2 text-white-100 font-weight-bolder">Offline</span>
+                                        </div>
+                                        <div class="d-flex align-items-center flex-wrap mb-8">
+                                            <div class="symbol symbol-50 symbol-light mr-5">
+                                                <span class="symbol-label">
+                                                    <img src="{{ asset('assets/media/svg/avatars/001-boy.svg') }}" class="h-50 align-self-center" alt="" />
+                                                </span>
+                                            </div>
+                                            <div class="d-flex flex-column flex-grow-1 mr-2">
+                                                <a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">Simalakama</a>
+                                                <span class="text-muted font-weight-bold">Database Teacher</span>
+                                            </div>
+                                            <span class="label label-xl label-primary label-inline my-lg-0 my-2 text-white-100 font-weight-bolder">Online</span>
+                                        </div>
+                                        <div class="d-flex align-items-center flex-wrap mb-8">
+                                            <div class="symbol symbol-50 symbol-light mr-5">
+                                                <span class="symbol-label">
+                                                    <img src="{{ asset('assets/media/svg/avatars/001-boy.svg') }}" class="h-50 align-self-center" alt="" />
+                                                </span>
+                                            </div>
+                                            <div class="d-flex flex-column flex-grow-1 mr-2">
+                                                <a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">Urang Dayak</a>
+                                                <span class="text-muted font-weight-bold">Geographic Teacher</span>
+                                            </div>
+                                            <span class="label label-xl label-primary label-inline my-lg-0 my-2 text-white-100 font-weight-bolder">Online</span>
+                                        </div>
+                                        <div class="d-flex align-items-center flex-wrap mb-8">
+                                            <div class="symbol symbol-50 symbol-light mr-5">
+                                                <span class="symbol-label">
+                                                    <img src="{{ asset('assets/media/svg/avatars/001-boy.svg') }}" class="h-50 align-self-center" alt="" />
+                                                </span>
+                                            </div>
+                                            <div class="d-flex flex-column flex-grow-1 mr-2">
+                                                <a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">Iko Balerang</a>
+                                                <span class="text-muted font-weight-bold">Kimia Teacher</span>
+                                            </div>
+                                            <span class="label label-xl label-danger label-inline my-lg-0 my-2 text-white-100 font-weight-bolder">Offline</span>
+                                        </div>
+                                        <div class="d-flex align-items-center flex-wrap mb-8">
+                                            <div class="symbol symbol-50 symbol-light mr-5">
+                                                <span class="symbol-label">
+                                                    <img src="{{ asset('assets/media/svg/avatars/001-boy.svg') }}" class="h-50 align-self-center" alt="" />
+                                                </span>
+                                            </div>
+                                            <div class="d-flex flex-column flex-grow-1 mr-2">
+                                                <a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">Jordianopola</a>
+                                                <span class="text-muted font-weight-bold">Indonesia Teacher</span>
+                                            </div>
+                                            <span class="label label-xl label-primary label-inline my-lg-0 my-2 text-white-100 font-weight-bolder">Online</span>
+                                        </div>
+                                        <div class="d-flex align-items-center flex-wrap mb-8">
+                                            <div class="symbol symbol-50 symbol-light mr-5">
+                                                <span class="symbol-label">
+                                                    <img src="{{ asset('assets/media/svg/avatars/001-boy.svg') }}" class="h-50 align-self-center" alt="" />
+                                                </span>
+                                            </div>
+                                            <div class="d-flex flex-column flex-grow-1 mr-2">
+                                                <a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">Jordianopola</a>
+                                                <span class="text-muted font-weight-bold">Indonesia Teacher</span>
+                                            </div>
+                                            <span class="label label-xl label-primary label-inline my-lg-0 my-2 text-white-100 font-weight-bolder">Online</span>
                                         </div>
                                     </div>
                                 </div>
@@ -174,7 +154,6 @@
                             </div>
                         </div>
                     </div>
-
             </div>
         </div>
     </div>
