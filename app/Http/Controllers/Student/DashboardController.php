@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {
-    public function overview()
+    public function dashbord()
     {
         return view('student.pages.overview');
     }

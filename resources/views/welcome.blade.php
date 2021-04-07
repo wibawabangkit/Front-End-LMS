@@ -21,7 +21,7 @@
             <div class="d-flex flex-column flex-row-fluid text-center">
                 <h1 class="error-title font-weight-boldest text-white mb-12" style="margin-top: 12rem;">Choose...</h1>
                 <p class="display-4 font-weight-bold text-warning">
-                    <a class="text-white" href="{{ route('statistik.index') }}"><u>Headmaster</u></a> Or <a class="text-white" href="{{ route('overview.index') }}"><u>Student</u></a>
+                    <a class="text-white" href="{{ route('statistik.index') }}"><u>Headmaster</u></a> Or <a class="text-white" href="{{ route('dashboard.index') }}"><u>Student</u></a>
                 </p>
             </div>
         </div>

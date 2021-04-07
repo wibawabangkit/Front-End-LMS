@@ -11,7 +11,7 @@
                         <a href="https://demo.khitah.com" class="nav-link py-4 px-6">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ route('overview.index')  }}" class="nav-link py-4 px-6 {{ (request()->is('student/overview')) ? 'active' : '' }}">Dashboard</a>
+                        <a href="{{ route('dashboard.index')  }}" class="nav-link py-4 px-6 {{ (request()->is('student/dashboard')) ? 'active' : '' }}">Dashboard</a>
                     </li>
                     <li class="nav-item">
                         <a href="{{ route('transkip-nilai.index')  }}" class="nav-link py-4 px-6 {{ (request()->is('student/transkip-nilai')) ? 'active' : '' }}">Transkip Nilai</a>

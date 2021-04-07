@@ -25,9 +25,15 @@
                                 <table class="table table-bordered table-hover table-checkable" id="kt_datatable2" style="margin-top: 13px !important">
                                     <thead>
                                         <tr>
-                                            <th width="1px">No</th>
-                                            <th>Class/Matpel/Matkul</th>
-                                            <th>Nilai</th>
+                                            <th style="text-align: center; vertical-align: middle;" rowspan="2">No</th>
+                                            <th style="text-align: center; vertical-align: middle;" rowspan="2">Class/Matpel/Matkul</th>
+                                            <th style="text-align: center; vertical-align: middle;" colspan="3">Nilai Rata-rata</th>
+                                            <th style="text-align: center; vertical-align: middle;" rowspan="2">Nilai</th>
+                                        </tr>
+                                        <tr>
+                                            <th style="text-align: center; vertical-align: middle;">Lesson</th>
+                                            <th style="text-align: center; vertical-align: middle;">Assignment</th>
+                                            <th style="text-align: center; vertical-align: middle;">Test & Quiz</th>
                                         </tr>
                                     </thead>
                                 </table>
@@ -56,13 +62,19 @@
                         url: APP_URL + "/api/transkip_nilai.php",
                         type: "POST",
                         data: {
-                            columnsDef: ["OrderID", "ClassMapelMatkul", "Nilai"]
+                            columnsDef: ["OrderID", "ClassMapelMatkul", "Lesson", "Assignment", "Quiz", "Nilai"]
                         }
                     },
                     columns: [{
                         data: "OrderID"
                     }, {
                         data: "ClassMapelMatkul"
+                    }, {
+                        data: "Lesson"
+                    }, {
+                        data: "Assignment"
+                    }, {
+                        data: "Quiz"
                     }, {
                         data: "Nilai"
                     }]

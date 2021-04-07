@@ -21,6 +21,6 @@ route::prefix('headmaster')->group(function () {
 });
 
 route::prefix('student')->group(function () {
-    Route::get('/overview', [\App\Http\Controllers\Student\DashboardController::class, 'overview'])->name('overview.index');
+    Route::get('/dashboard', [\App\Http\Controllers\Student\DashboardController::class, 'dashbord'])->name('dashboard.index');
     Route::get('/transkip-nilai', [\App\Http\Controllers\Student\DashboardController::class, 'transkipNilai'])->name('transkip-nilai.index');
 });
