@@ -58,6 +58,8 @@
                     serverSide: !0,
                     searching: 0,
                     lengthChange: 0,
+                    paging: 0,
+                    info: 0,
                     ajax: {
                         url: APP_URL + "/api/transkip_nilai.php",
                         type: "POST",

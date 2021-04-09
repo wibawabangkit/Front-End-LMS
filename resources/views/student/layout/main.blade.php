@@ -10,8 +10,23 @@
     <link href="{{ asset('assets/plugins/global/plugins.bundle.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('assets/plugins/custom/prismjs/prismjs.bundle.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('assets/css/style.bundle.css') }}" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('assets/custom/css/main.css') }}" rel="stylesheet" type="text/css" />
     @yield('stylesheet')
+    <style>
+        /* Works on Firefox */
+        * {
+            scrollbar-width: thin;
+            scrollbar-color: #babcbf;
+        }
+
+        /* Works on Chrome, Edge, and Safari */
+        *::-webkit-scrollbar {
+            width: 9px;
+        }
+
+        *::-webkit-scrollbar-thumb {
+            background-color: #babcbf;
+        }
+    </style>
 
     <link rel="icon" href="https://khitah.com/wp-content/uploads/2021/01/cropped-logogram-32x32.png" sizes="32x32" />
 </head>

@@ -1,99 +1,74 @@
 @extends('student.layout.main', ['title' => 'Dashboard'])
 @section('stylesheet')
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.min.css" integrity="sha512-Ujn3LMQ8mHWqy7EPP32eqGKBhBU8v39JRIfCer4nTZqlsSZIwy5g3Wz9SaZrd6pp3vmjI34yyzguZ2KQ66CLSQ==" crossorigin="anonymous" />
-    <style>
-        .datepicker {
-            border: none;
-        }
-    </style>
+    <link rel="stylesheet" href="{{ asset('assets/custom/css/calendar-inline.css') }}">
 @endsection
 @section('content')
     <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
         <div class="d-flex flex-column-fluid">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-9">
-                        <section class="gfd-jadwal">
-                            <div class="gfd-title">
-                                <div>
-                                <h2>Informasi Hari Ini</h2>
-                                </div>
-                                <div>
-                                    <h2 class="pull-right" style="text-align: right;">Semester Genap 2020/2021</h2>
-                                </div>
-                            </div>
-                            <div class="alert alert-custom alert-light-danger" role="alert">
-                                <div class="alert-icon"><i class="flaticon2-bell-5 icon-md"></i></div>
-                                Pengambilan raport akan dilakukan pada hari Rabu, 31 Maret 2021
-                            </div>
-                        </section>
-                        <section class="gfd-semuajadwal">
-                            <div class="gfd-title">
-                                <div>
-                                    <h2>Mata Pelajaran Anda</h2>
-                                </div>
-                            </div>
-                            <div class="gfd-board-jadwal">
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <div class="figure-jadwal">
-                                            <div class="rabu">{{ date('l') }}</div>
-                                            <div class="figure-matkul">
-                                                <h1 class="title-matkul">Sosiologi</h1>
-                                            </div>
+                    <div class="col-xl-8">
+                        <div class="d-flex align-items-center justify-content-between flex-wrap py-3">
+                            <div class="d-flex align-items-center mr-2 py-2">
+                                <div class="d-flex mr-3">
+                                    <div class="navi navi-hover navi-active navi-link-rounded navi-bold d-flex flex-row">
+                                        <div class="navi-item mr-2">
+                                            <span class="navi-text">Informasi Hari Ini</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="gfd-board-jadwal">
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <div class="figure-jadwal">
-                                            <div class="rabu">{{ date('l') }}</div>
-                                            <div class="figure-matkul">
-                                                <h1 class="title-matkul">Match</h1>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="gfd-board-jadwal">
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <div class="figure-jadwal">
-                                            <div class="rabu">{{ date('l') }}</div>
-                                            <div class="figure-matkul">
-                                                <h1 class="title-matkul">Biologi</h1>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="gfd-board-jadwal">
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <div class="figure-jadwal">
-                                            <div class="rabu">{{ date('l') }}</div>
-                                            <div class="figure-matkul">
-                                                <h1 class="title-matkul">English</h1>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                    <div class="col-md-3 gfd-aside">
-                        <div class="gfd-aside-panel ribbon ribbon-top ribbon-ver">
-                            <div class="ribbon-target bg-danger btn btn-icon btn-light-white pulse pulse-danger" style="top: -2px; left: 20px;">
-                                <i class="flaticon2-information"></i>
-                                <span class="pulse-ring"></span>
-                            </div><br><br>
-                            <p class="gfd-aside-message mb-1">there are tasks that you still haven't finished.</p>
-                            <hr>
-                            <a href="#">Read More →</a>
+                            <span class="navi-text py-2">Semester Genap 2020/2021</span>
                         </div>
-                        <div class="datepicker-here" data-language='id'></div>
+                        <div class="alert alert-custom alert-light-danger" role="alert">
+                            <div class="alert-icon"><i class="flaticon2-bell-5 icon-md"></i></div>
+                            Pengambilan raport akan dilakukan pada hari Rabu, 31 Maret 2021
+                        </div>
+                        <div class="card card-custom gutter-b">
+                            <div class="card-header">
+                                <div class="card-title">
+                                    <h3 class="card-label">Mata Pelajaran Anda</h3>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-bordered table-hover table-checkable" id="kt_datatable2" style="margin-top: 13px !important">
+                                    <thead>
+                                        <tr>
+                                            <th width="1px">No</th>
+                                            <th>Kelas/Mata Pelajaran/Mata Kuliah</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4">
+                        <div class="">
+                            <div class="card card-custom">
+                                <div class="card-header">
+                                    <div class="card-title">
+                                        <a href="#" class="btn btn-icon btn-light-danger pulse pulse-danger mr-5">
+                                            <i class="flaticon2-information"></i>
+                                            <span class="pulse-ring"></span>
+                                        </a>
+                                        <h3 class="card-label">
+                                            Notifikasi
+                                        </h3>
+                                    </div>
+                                    <div class="card-toolbar">
+                                        <a href="#" class="">
+                                            Read More
+                                            <i class="fas fa-arrow-circle-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    There are tasks that you still haven't finished.
+                                </div>
+                            </div>
+                            @include('student.pages.partials.calendar')
+                        </div>
                     </div>
                 </div>
             </div>
@@ -101,10 +76,10 @@
     </div>
 @endsection
 @push('scripts')
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.min.js" integrity="sha512-sM9DpZQXHGs+rFjJYXE1OcuCviEgaXoQIvgsH7nejZB64A09lKeTU4nrs/K6YxFs6f+9FF2awNeJTkaLuplBhg==" crossorigin="anonymous"></script>
     <script src="{{ asset('assets/js/pages/features/charts/apexcharts.js') }}"></script>
     <script src="https://unpkg.com/gauge-chart@latest/dist/bundle.js"></script>
-    <script src="{{ asset('assets/custom/js/datepicker.id.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha512-3n19xznO0ubPpSwYCRRBgHh63DrV+bdZfHK52b1esvId4GsfwStQNPJFjeQos2h3JwCmZl0/LgLxSKMAI55hgw==" crossorigin="anonymous"></script>
+    <script src="{{ asset('assets/plugins/custom/datatables/datatables.bundle.js') }}"></script>
     <script type="text/javascript">
         function chartNilai(avg) {
             if (isNaN(avg)) avg = 0;
@@ -128,4 +103,37 @@
         }
         chartNilai();
     </script>
+    <script type="text/javascript">
+        "use strict";
+        var KTDatatablesDataSourceAjaxServer = {
+            init: function() {
+                $("#kt_datatable2").DataTable({
+                    responsive: !0,
+                    searchDelay: 500,
+                    processing: !0,
+                    serverSide: !0,
+                    searching: 0,
+                    lengthChange: 0,
+                    paging: 0,
+                    info: 0,
+                    ajax: {
+                        url: APP_URL + "/api/mapel.php",
+                        type: "POST",
+                        data: {
+                            columnsDef: ["OrderID", "ClassMapelMatkul"]
+                        }
+                    },
+                    columns: [{
+                        data: "OrderID"
+                    }, {
+                        data: "ClassMapelMatkul"
+                    }]
+                })
+            }
+        };
+        jQuery(document).ready((function() {
+            KTDatatablesDataSourceAjaxServer.init()
+        }));
+    </script>
+    <script src="{{ asset('assets/custom/js/calendar-inline.js') }}"></script>
 @endpush
