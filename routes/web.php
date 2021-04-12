@@ -10,9 +10,9 @@ Route::get('/boost', function () {
     dd('OK');
 });
 
-route::redirect('/', '/dashboard', 301);
+route::redirect('/', 'dashboard/', 301);
 
-route::prefix('dasboard')->group(function () {
+route::prefix('dashboard')->group(function () {
     route::get('/', [\App\Http\Controllers\Auth\LoginController::class, 'index'])->name('auth.index');
 
     route::prefix('headmaster')->group(function () {
