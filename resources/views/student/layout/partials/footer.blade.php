@@ -15,7 +15,7 @@
 <nav class="navbar navbar-dark navbar-expand fixed-bottom d-block d-lg-none p-0" style="background-color: #004693;">
     <ul class="navbar-nav nav-justified w-100">
         <li class="nav-item">
-            <a href="{{ route('class.index') }}" class="nav-link text-center">
+            <a href="{{ route('dashboard.index') }}" class="nav-link text-center">
                 <span class="svg-icon svg-icon-2x">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
                         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -44,7 +44,7 @@
         </li>
 
         <li class="nav-item">
-            <a href="{{ route('calender.index')  }}" class="nav-link text-center">
+            <a href="{{ route('transkip-nilai.index')  }}" class="nav-link text-center">
                 <span class="svg-icon svg-icon-2x">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
