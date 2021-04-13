@@ -1,6 +1,6 @@
 @extends('teacher.layout.main', ['title' => 'Overview Statistic'])
 @section('stylesheet')
-    <link href="{{ asset('assets/plugins/custom/datatables/datatables.bundle.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('dashboard/assets/plugins/custom/datatables/datatables.bundle.css') }}" rel="stylesheet" type="text/css" />
 @endsection
 @section('content')
     <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
@@ -12,7 +12,7 @@
                         <div class="d-flex">
                             <div class="flex-shrink-0 mr-7">
                                 <div class="symbol symbol-50 symbol-lg-120">
-                                    <div class="image-input image-input-empty image-input-outline" id="kt_user_edit_avatar" style="background-image: url({{ asset('assets/media/users/blank.png') }})">
+                                    <div class="image-input image-input-empty image-input-outline" id="kt_user_edit_avatar" style="background-image: url({{ asset('dashboard/assets/media/users/blank.png') }})">
                                         <div class="image-input-wrapper"></div>
                                         <label class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow" data-action="change" data-toggle="tooltip" title="" data-original-title="Change avatar">
                                             <i class="fa fa-pen icon-sm text-muted"></i>
@@ -81,9 +81,9 @@
     </div>
 @endsection
 @push('scripts')
-    <script src="{{ asset('assets/js/pages/features/charts/apexcharts.js') }}"></script>
-    <script src="{{ asset('assets/plugins/custom/datatables/datatables.bundle.js') }}"></script>
-    <script src="{{ asset('assets/js/pages/custom/user/edit-user.js') }}"></script>
+    <script src="{{ asset('dashboard/assets/js/pages/features/charts/apexcharts.js') }}"></script>
+    <script src="{{ asset('dashboard/assets/plugins/custom/datatables/datatables.bundle.js') }}"></script>
+    <script src="{{ asset('dashboard/assets/js/pages/custom/user/edit-user.js') }}"></script>
     <script type="text/javascript">
         "use strict";
         var KTDatatablesDataSourceAjaxServer = {

@@ -1,6 +1,6 @@
 @extends('student.layout.main', ['title' => 'Dashboard'])
 @section('stylesheet')
-    <link rel="stylesheet" href="{{ asset('assets/custom/css/calendar-inline.css') }}">
+    <link rel="stylesheet" href="{{ asset('dashboard/assets/custom/css/calendar-inline.css') }}">
 @endsection
 @section('content')
     <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
@@ -76,10 +76,10 @@
     </div>
 @endsection
 @push('scripts')
-    <script src="{{ asset('assets/js/pages/features/charts/apexcharts.js') }}"></script>
+    <script src="{{ asset('dashboard/assets/js/pages/features/charts/apexcharts.js') }}"></script>
     <script src="https://unpkg.com/gauge-chart@latest/dist/bundle.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha512-3n19xznO0ubPpSwYCRRBgHh63DrV+bdZfHK52b1esvId4GsfwStQNPJFjeQos2h3JwCmZl0/LgLxSKMAI55hgw==" crossorigin="anonymous"></script>
-    <script src="{{ asset('assets/plugins/custom/datatables/datatables.bundle.js') }}"></script>
+    <script src="{{ asset('dashboard/assets/plugins/custom/datatables/datatables.bundle.js') }}"></script>
     <script type="text/javascript">
         function chartNilai(avg) {
             if (isNaN(avg)) avg = 0;
@@ -135,5 +135,5 @@
             KTDatatablesDataSourceAjaxServer.init()
         }));
     </script>
-    <script src="{{ asset('assets/custom/js/calendar-inline.js') }}"></script>
+    <script src="{{ asset('dashboard/assets/custom/js/calendar-inline.js') }}"></script>
 @endpush

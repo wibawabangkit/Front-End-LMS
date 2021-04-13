@@ -1,6 +1,6 @@
 @extends('headmaster.layout.main', ['title' => 'Calendar Academic'])
 @section('stylesheet')
-    <link href="{{ asset('assets/plugins/custom/fullcalendar/fullcalendar.bundle.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('dashboard/assets/plugins/custom/fullcalendar/fullcalendar.bundle.css') }}" rel="stylesheet" type="text/css" />
 @endsection
 @section('content')
     <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
@@ -23,7 +23,6 @@
     </div>
 @endsection
 @push('scripts')
-    <script src="{{ asset('assets/plugins/custom/fullcalendar/fullcalendar.bundle.js?v=7.2.3') }}"></script>
-    <script src="{{ asset('assets/custom/js/calendar.js') }}"></script>
+    <script src="{{ asset('dashboard/assets/plugins/custom/fullcalendar/fullcalendar.bundle.js?v=7.2.3') }}"></script>
+    <script src="{{ asset('dashboard/assets/custom/js/calendar.js') }}"></script>
 @endpush
-

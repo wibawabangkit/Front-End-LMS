@@ -1,6 +1,6 @@
 @extends('headmaster.layout.main', ['title' => 'Overview Statistic'])
 @section('stylesheet')
-    <link href="{{ asset('assets/plugins/custom/datatables/datatables.bundle.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('dashboard/assets/plugins/custom/datatables/datatables.bundle.css') }}" rel="stylesheet" type="text/css" />
 @endsection
 @section('content')
     <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
@@ -15,8 +15,8 @@
                                         <a href="#" class="card-title font-weight-bolder text-dark-75 font-size-h5 mb-2 text-hover-primary">265</a>
                                         <span class="font-weight-bold text-muted font-size-lg">Total of Students</span>
                                     </div>
-                                    <img src="{{ asset('assets/media/svg/avatars/014-girl-7.svg') }}" alt="" class="align-self-end h-100px" />
-                                    <img src="{{ asset('assets/media/svg/avatars/029-boy-11.svg') }}" alt="" class="align-self-end h-100px" />
+                                    <img src="{{ asset('dashboard/assets/media/svg/avatars/014-girl-7.svg') }}" alt="" class="align-self-end h-100px" />
+                                    <img src="{{ asset('dashboard/assets/media/svg/avatars/029-boy-11.svg') }}" alt="" class="align-self-end h-100px" />
                                 </div>
                             </div>
                         </div>
@@ -27,7 +27,7 @@
                                         <a href="#" class="card-title font-weight-bolder text-dark-75 font-size-h5 mb-2 text-hover-primary">32</a>
                                         <span class="font-weight-bold text-muted font-size-lg">Total of teacher</span>
                                     </div>
-                                    <img src="{{ asset('assets/media/svg/avatars/004-boy-1.svg') }}" alt="" class="align-self-end h-100px" />
+                                    <img src="{{ asset('dashboard/assets/media/svg/avatars/004-boy-1.svg') }}" alt="" class="align-self-end h-100px" />
                                 </div>
                             </div>
                         </div>
@@ -57,7 +57,7 @@
                                         <div class="d-flex align-items-center flex-wrap mb-8">
                                             <div class="symbol symbol-50 symbol-light mr-5">
                                                 <span class="symbol-label">
-                                                    <img src="{{ asset('assets/media/svg/avatars/001-boy.svg') }}" class="h-50 align-self-center" alt="" />
+                                                    <img src="{{ asset('dashboard/assets/media/svg/avatars/001-boy.svg') }}" class="h-50 align-self-center" alt="" />
                                                 </span>
                                             </div>
                                             <div class="d-flex flex-column flex-grow-1 mr-2">
@@ -69,7 +69,7 @@
                                         <div class="d-flex align-items-center flex-wrap mb-8">
                                             <div class="symbol symbol-50 symbol-light mr-5">
                                                 <span class="symbol-label">
-                                                    <img src="{{ asset('assets/media/svg/avatars/001-boy.svg') }}" class="h-50 align-self-center" alt="" />
+                                                    <img src="{{ asset('dashboard/assets/media/svg/avatars/001-boy.svg') }}" class="h-50 align-self-center" alt="" />
                                                 </span>
                                             </div>
                                             <div class="d-flex flex-column flex-grow-1 mr-2">
@@ -81,7 +81,7 @@
                                         <div class="d-flex align-items-center flex-wrap mb-8">
                                             <div class="symbol symbol-50 symbol-light mr-5">
                                                 <span class="symbol-label">
-                                                    <img src="{{ asset('assets/media/svg/avatars/001-boy.svg') }}" class="h-50 align-self-center" alt="" />
+                                                    <img src="{{ asset('dashboard/assets/media/svg/avatars/001-boy.svg') }}" class="h-50 align-self-center" alt="" />
                                                 </span>
                                             </div>
                                             <div class="d-flex flex-column flex-grow-1 mr-2">
@@ -93,7 +93,7 @@
                                         <div class="d-flex align-items-center flex-wrap mb-8">
                                             <div class="symbol symbol-50 symbol-light mr-5">
                                                 <span class="symbol-label">
-                                                    <img src="{{ asset('assets/media/svg/avatars/001-boy.svg') }}" class="h-50 align-self-center" alt="" />
+                                                    <img src="{{ asset('dashboard/assets/media/svg/avatars/001-boy.svg') }}" class="h-50 align-self-center" alt="" />
                                                 </span>
                                             </div>
                                             <div class="d-flex flex-column flex-grow-1 mr-2">
@@ -105,7 +105,7 @@
                                         <div class="d-flex align-items-center flex-wrap mb-8">
                                             <div class="symbol symbol-50 symbol-light mr-5">
                                                 <span class="symbol-label">
-                                                    <img src="{{ asset('assets/media/svg/avatars/001-boy.svg') }}" class="h-50 align-self-center" alt="" />
+                                                    <img src="{{ asset('dashboard/assets/media/svg/avatars/001-boy.svg') }}" class="h-50 align-self-center" alt="" />
                                                 </span>
                                             </div>
                                             <div class="d-flex flex-column flex-grow-1 mr-2">
@@ -117,7 +117,7 @@
                                         <div class="d-flex align-items-center flex-wrap mb-8">
                                             <div class="symbol symbol-50 symbol-light mr-5">
                                                 <span class="symbol-label">
-                                                    <img src="{{ asset('assets/media/svg/avatars/001-boy.svg') }}" class="h-50 align-self-center" alt="" />
+                                                    <img src="{{ asset('dashboard/assets/media/svg/avatars/001-boy.svg') }}" class="h-50 align-self-center" alt="" />
                                                 </span>
                                             </div>
                                             <div class="d-flex flex-column flex-grow-1 mr-2">
@@ -159,8 +159,8 @@
     </div>
 @endsection
 @push('scripts')
-    <script src="{{ asset('assets/js/pages/features/charts/apexcharts.js') }}"></script>
-    <script src="{{ asset('assets/plugins/custom/datatables/datatables.bundle.js') }}"></script>
+    <script src="{{ asset('dashboard/assets/js/pages/features/charts/apexcharts.js') }}"></script>
+    <script src="{{ asset('dashboard/assets/plugins/custom/datatables/datatables.bundle.js') }}"></script>
     <script type="text/javascript">
         "use strict";
         var KTDatatablesDataSourceAjaxServer = {
