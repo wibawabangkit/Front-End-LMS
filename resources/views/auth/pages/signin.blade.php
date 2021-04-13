@@ -14,10 +14,10 @@
                         <i class="fas fa-user-secret text-warning icon-lg"></i> Sign in Headmaster
                     </a>
                     <a href="{{ route('dashboard.index') }}" class="btn btn-light-primary font-weight-bolder px-8 py-4 my-3 font-size-lg mr-2">
-                        <i class="fas fa-user-check text-warning icon-lg"></i> Sign in Teacher
+                        <i class="fas fa-user-check text-warning icon-lg"></i> Sign in Student
                     </a>
                     <a href="{{ route('teacher.index') }}" class="btn btn-light-primary font-weight-bolder px-8 py-4 my-3 font-size-lg mr-2">
-                        <i class="fas fa-chalkboard-teacher text-warning icon-lg"></i> Sign in Student
+                        <i class="fas fa-chalkboard-teacher text-warning icon-lg"></i> Sign in Teacher
                     </a>
                 </div>
             </div>

@@ -11,13 +11,13 @@
                         <a href="https://demo.khitah.com" class="nav-link py-4 px-6">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ route('calender.index')  }}" class="nav-link py-4 px-6 {{ (request()->is('headmaster/calender')) ? 'active' : '' }}">Calender Academik</a>
+                        <a href="{{ route('calender.index')  }}" class="nav-link py-4 px-6 {{ request()->route()->getName() == 'calender.index' ? 'active' : '' }}">Calender Academik</a>
                     </li>
                     <li class="nav-item mr-3">
-                        <a href="{{ route('statistik.index') }}" class="nav-link py-4 px-6 {{ (request()->is('headmaster/statistik')) ? 'active' : '' }}">Overview Statistik</a>
+                        <a href="{{ route('statistik.index') }}" class="nav-link py-4 px-6 {{ request()->route()->getName() == 'statistik.index' ? 'active' : '' }}">Overview Statistik</a>
                     </li>
                     <li class="nav-item mr-3">
-                        <a href="{{ route('class.index') }}" class="nav-link py-4 px-6 {{ (request()->is('headmaster/class')) ? 'active' : '' }}">Overview Class</a>
+                        <a href="{{ route('class.index') }}" class="nav-link py-4 px-6 {{ request()->route()->getName() == 'class.index' ? 'active' : '' }}">Overview Class</a>
                     </li>
                 </ul>
             </div>

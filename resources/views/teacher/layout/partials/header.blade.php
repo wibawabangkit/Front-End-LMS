@@ -8,13 +8,16 @@
 
                 <ul class="header-tabs nav align-self-end font-size-lg" role="tablist">
                     <li class="nav-item">
-                        <a href="{{ route('teacher.calendar-akademic.index')  }}" class="nav-link py-4 px-6 {{ (request()->is('teacher/calendar-akademic')) ? 'active' : '' }}">Calender Academik</a>
+                        <a href="https://demo.khitah.com" class="nav-link py-4 px-6">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route('teacher.calendar-akademic.index')  }}" class="nav-link py-4 px-6 {{ request()->route()->getName() == 'teacher.calendar-akademic.index' ? 'active' : '' }}">Calender Academik</a>
                     </li>
                     <li class="nav-item mr-3">
-                        <a href="{{ route('teacher.index') }}" class="nav-link py-4 px-6 {{ (request()->is('teacher/teacher')) ? 'active' : '' }}">Overview Guru</a>
+                        <a href="{{ route('teacher.index') }}" class="nav-link py-4 px-6 {{ request()->route()->getName() == 'teacher.index' ? 'active' : '' }}">Overview Guru</a>
                     </li>
                     <li class="nav-item mr-3">
-                        <a href="{{ route('teacher.class.index') }}" class="nav-link py-4 px-6 {{ (request()->is('teacher/class')) ? 'active' : '' }}">Overview Class</a>
+                        <a href="{{ route('teacher.class.index') }}" class="nav-link py-4 px-6 {{ request()->route()->getName() == 'teacher.class.index' ? 'active' : '' }}">Overview Class</a>
                     </li>
                 </ul>
             </div>
