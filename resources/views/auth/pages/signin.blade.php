@@ -1,6 +1,6 @@
 @extends('auth.layout.main', ['title' => 'Welcome'])
 @section('stylesheet')
-    <link href="{{ asset('dashboard/assets/css/pages/login/login-4.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('assets/css/pages/login/login-4.css') }}" rel="stylesheet" type="text/css" />
 @endsection
 @section('content')
     <div class="login login-4 wizard d-flex flex-column flex-lg-row flex-column-fluid">
@@ -23,7 +23,7 @@
             </div>
         </div>
         <div class="login-aside order-1 order-lg-2 bgi-no-repeat bgi-position-x-right" style="background: linear-gradient(147.04deg, #181C32 0.74%, #121525 99.61%);">
-            <div class="login-conteiner bgi-no-repeat bgi-position-x-right bgi-position-y-bottom" style="background-image: url({{ asset('dashboard/assets/media/svg/illustrations/login-visual-4.svg') }});">
+            <div class="login-conteiner bgi-no-repeat bgi-position-x-right bgi-position-y-bottom" style="background-image: url({{ asset('assets/media/svg/illustrations/login-visual-4.svg') }});">
                 <h3 class="pt-lg-40 pl-lg-20 pb-lg-0 pl-10 py-20 m-0 d-flex justify-content-lg-start font-weight-boldest display5 display1-lg text-white">Build Your
                 <br />Future And Grow With
                 <br />Khitah</h3>
@@ -32,5 +32,5 @@
     </div>
 @endsection
 @push('scripts')
-    <script src="{{ asset('dashboard/assets/js/pages/custom/login/login-4.js') }}"></script>
+    <script src="{{ asset('assets/js/pages/custom/login/login-4.js') }}"></script>
 @endpush

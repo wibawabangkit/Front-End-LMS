@@ -1,6 +1,6 @@
 @extends('teacher.layout.main', ['title' => 'Overview Class'])
 @section('stylesheet')
-    <link href="{{ asset('dashboard/assets/plugins/custom/datatables/datatables.bundle.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('assets/plugins/custom/datatables/datatables.bundle.css') }}" rel="stylesheet" type="text/css" />
 @endsection
 @section('content')
     <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
@@ -41,8 +41,8 @@
     </div>
 @endsection
 @push('scripts')
-    <script src="{{ asset('dashboard/assets/js/pages/features/charts/apexcharts.js') }}"></script>
-    <script src="{{ asset('dashboard/assets/plugins/custom/datatables/datatables.bundle.js') }}"></script>
+    <script src="{{ asset('assets/js/pages/features/charts/apexcharts.js') }}"></script>
+    <script src="{{ asset('assets/plugins/custom/datatables/datatables.bundle.js') }}"></script>
     <script type="text/javascript">
         "use strict";
         var KTDatatablesDataSourceAjaxServer = {
