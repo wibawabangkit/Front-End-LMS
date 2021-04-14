@@ -8,7 +8,7 @@
 
                 <ul class="header-tabs nav align-self-end font-size-lg" role="tablist">
                     <li class="nav-item">
-                        <a href="https://demo.khitah.com" class="nav-link py-4 px-6">Home</a>
+                        <a href="/" class="nav-link py-4 px-6">Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="{{ route('teacher.calendar-akademic.index')  }}" class="nav-link py-4 px-6 {{ request()->route()->getName() == 'teacher.calendar-akademic.index' ? 'active' : '' }}">Calender Academik</a>

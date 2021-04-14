@@ -5,7 +5,7 @@
             <a href="{{ route('calender.index')  }}" target="_blank" class="text-dark-75 text-hover-primary">Khitah LMS . All rights reserved.</a>
         </div>
         <div class="nav nav-dark order-1 order-md-2">
-            <a href="https://demo.khitah.com" class="nav-link pr-3 pl-0">Home</a>
+            <a href="/" class="nav-link pr-3 pl-0">Home</a>
             <a href="{{ route('calender.index')  }}" class="nav-link pr-3 pl-0">Calendar Academic</a>
             <a href="{{ route('statistik.index') }}" class="nav-link px-3">Overview Statistic</a>
             <a href="{{ route('class.index') }}" class="nav-link pl-3 pr-0">Overview Class</a>
@@ -16,7 +16,7 @@
 <nav class="navbar navbar-dark navbar-expand fixed-bottom d-block d-lg-none p-0" style="background-color: #004693;">
     <ul class="navbar-nav nav-justified w-100">
         <li class="nav-item">
-            <a href="https://demo.khitah.com" class="nav-link text-center">
+            <a href="/" class="nav-link text-center">
                 <span class="svg-icon svg-icon-2x">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
                         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">

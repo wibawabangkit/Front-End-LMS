@@ -16,7 +16,7 @@
     <ul class="navbar-nav nav-justified w-100">
 
         <li class="nav-item">
-            <a href="https://demo.khitah.com" class="nav-link text-center">
+            <a href="/" class="nav-link text-center">
                 <span class="svg-icon svg-icon-2x">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
                         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
