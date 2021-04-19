@@ -10,7 +10,7 @@ Route::get('/boost', function () {
     dd('OK');
 });
 
-route::get('/', [\App\Http\Controllers\Auth\LoginController::class, 'index'])->name('auth.index');
+route::get('/dashboard', [\App\Http\Controllers\Auth\LoginController::class, 'index'])->name('auth.index');
 
 route::prefix('headmaster')->group(function () {
     Route::get('/calender', [\App\Http\Controllers\Headmaster\DashboardController::class, 'calender'])->name('calender.index');

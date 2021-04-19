@@ -2,7 +2,7 @@
     <div class="header-top" style="background-color: #004693;">
         <div class="container">
             <div class="d-none d-lg-flex align-items-center mr-3">
-                <a href="{{ route('teacher.index') }}" class="mr-20">
+                <a href="javascript:void" class="mr-20">
                     <img alt="Logo" src="https://khitah.com/wp-content/uploads/2021/01/logokhitah-1.png" class="max-h-45px" />
                 </a>
 

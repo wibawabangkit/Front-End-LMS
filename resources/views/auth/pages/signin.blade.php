@@ -6,7 +6,7 @@
     <div class="login login-4 wizard d-flex flex-column flex-lg-row flex-column-fluid">
         <div class="login-container order-2 order-lg-1 d-flex flex-center flex-row-fluid px-7 pt-lg-0 pb-lg-0 pt-4 pb-6 bg-dark">
             <div class="login-content d-flex flex-column pt-lg-0 pt-12">
-                <a href="#" class="login-logo pb-xl-20 pb-15">
+                <a href="javascript:void" class="login-logo pb-xl-20 pb-15">
                     <img src="https://khitah.com/wp-content/uploads/2021/01/logokhitah-1.png" class="max-h-70px" alt="" />
                 </a>
                 <div class="pb-lg-0 pb-5">

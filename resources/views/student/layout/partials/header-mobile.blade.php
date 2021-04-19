@@ -1,5 +1,5 @@
 <div id="kt_header_mobile" class="header-mobile header-mobile-fixed" style="background-color: #004693;">
-    <a href="#">
+    <a href="javascript:void">
         <img alt="Logo" src="https://khitah.com/wp-content/uploads/2021/01/logokhitah-1.png" class="max-h-45px" />
     </a>
     <div class="d-flex align-items-center">
